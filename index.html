@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2e57">
+  <meta name="description" content="Milet Engenharia Consultiva. Engenharia de instrumentação, automação e telecomunicações para projetos industriais.">
+  <title>Milet Engenharia Consultiva</title>
+  <link rel="icon" href="simbolo.svg" type="image/svg+xml">
+  <style>
+    :root{color-scheme:light;--navy:#0b2e57;--ink:#172a40;--muted:#64758a;--line:#dce4ec;--blue:#9db1c8;--paper:#f6f8fb}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit}
+    .wrap{width:min(1120px,calc(100% - 48px));margin:auto}
+    header{background:#fff;border-bottom:1px solid var(--line)}
+    header .wrap{min-height:104px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{display:block;width:270px;max-width:65%;height:auto}
+    .status{color:var(--navy);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    main{overflow:hidden}
+    .hero{position:relative;padding:clamp(78px,12vw,160px) 0 90px;background:linear-gradient(145deg,#fff 15%,#eef3f8 100%)}
+    .hero:after{content:"";position:absolute;right:-120px;top:-180px;width:480px;height:480px;border:90px solid rgba(157,177,200,.13);border-radius:50%;pointer-events:none}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--navy);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:34px;height:2px;background:var(--blue)}
+    h1{position:relative;max-width:840px;margin:28px 0 24px;color:var(--navy);font-size:clamp(2.7rem,6vw,5.7rem);line-height:1.08;letter-spacing:-.055em;font-weight:750}
+    .lead{max-width:680px;margin:0;color:#445b73;font-size:clamp(1.1rem,2vw,1.4rem);line-height:1.55}
+    .intro{padding:75px 0 95px}
+    .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,8vw,120px)}
+    h2{margin:0;color:var(--navy);font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;letter-spacing:-.035em}
+    .intro p{margin:20px 0 0;color:#4f6175}
+    .areas{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+    .areas li{display:flex;gap:18px;align-items:baseline;padding:17px 0;border-bottom:1px solid var(--line);font-weight:600}
+    .areas span{font-size:.75rem;color:#718aa5;font-weight:800}
+    footer{background:var(--navy);color:#dce7f2;padding:28px 0}
+    footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem}
+    @media(max-width:680px){.wrap{width:min(100% - 36px,1120px)}header .wrap{min-height:86px}.logo{width:205px}.status{max-width:100px;text-align:right;font-size:.64rem}.hero{padding:82px 0}.hero:after{right:-280px}.intro{padding:60px 0}.intro-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><img class="logo" src="logo.svg" alt="Milet Engenharia Consultiva"><span class="status">Site em preparação</span></div></header>
+  <main>
+    <section class="hero" aria-labelledby="titulo"><div class="wrap">
+      <div class="eyebrow">Engenharia consultiva</div>
+      <h1 id="titulo">Precisão técnica em cada decisão de projeto.</h1>
+      <p class="lead">Instrumentação, automação e telecomunicações para projetos industriais. Uma atuação orientada por rigor técnico, integração e clareza.</p>
+    </div></section>
+    <section class="intro" aria-labelledby="atuacao"><div class="wrap intro-grid">
+      <div><h2 id="atuacao">Conhecimento especializado para projetos complexos.</h2><p>Estamos preparando este espaço para apresentar nossa atuação, serviços e canais de contato.</p></div>
+      <ul class="areas" aria-label="Áreas de atuação">
+        <li><span>01</span> Instrumentação e controle</li>
+        <li><span>02</span> Automação industrial</li>
+        <li><span>03</span> Telecomunicações industriais</li>
+        <li><span>04</span> Segurança funcional e integração</li>
+      </ul>
+    </div></section>
+  </main>
+  <footer><div class="wrap"><span>© 2026 Milet Engenharia Consultiva</span><span>Aracaju · Sergipe · Brasil</span></div></footer>
+</body>
+</html>
