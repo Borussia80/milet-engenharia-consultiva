@@ -1,0 +1,172 @@
+/* MILET Engenharia Consultiva — Design System — generated from tokens.json */
+:root, [data-theme="light"] {
+  --navy: #0b2e57; /* Azul MILET da logomarca (fixo nos dois temas). Fundo das faixas institucionais e do rodapé; nunca recolorir o logo. */
+  --navy-deep: #061b35; /* Azul profundo derivado do navy para o Hero e a faixa de contato (fixo). Texto sobre ele: `on-dark` e `on-dark-muted`. */
+  --steel: #9db1c8; /* Azul aço da logomarca (metade esquerda do símbolo), fixo. Detalhes gráficos, linhas de P&ID e texto secundário sobre `navy`/`navy-deep` (6,2:1). Nunca como texto sobre branco (2,3:1). */
+  --surface: #ffffff; /* Fundo da página. */
+  --surface-alt: #f3f6f9; /* Fundo de seções alternadas (Sobre, Segmentos, Metodologia). */
+  --surface-raised: #ffffff; /* Cartões e campos de formulário sobre `surface` e `surface-alt`. */
+  --ink: #14243a; /* Texto principal sobre `surface`, `surface-alt` e `surface-raised` (≥ 12:1 nos dois temas). */
+  --ink-muted: #4a5b70; /* Texto secundário, legendas e descrições sobre `surface`, `surface-alt` e `surface-raised` (≥ 6:1). */
+  --line: #d5dee8; /* Divisórias e bordas de cartão (decorativas). */
+  --line-strong: #7f8fa3; /* Bordas de campos de formulário e controles (≥ 3:1 sobre `surface` e `surface-raised`). */
+  --brand: #0b2e57; /* Cor de marca semântica: botão primário, títulos de destaque, anéis de ícone, links. No escuro vira o azul aço. */
+  --on-brand: #ffffff; /* Texto e ícones sobre `brand`. */
+  --brand-soft: #e6ecf3; /* Fundo suave da marca: anel/halo de ícones, hover de cartões, chips. */
+  --accent: #9db1c8; /* Segundo tom de identidade para blocos gráficos e a capa (aço no claro, claro no escuro). Não usar como texto sobre `surface` no tema claro. */
+  --on-dark: #ffffff; /* Texto principal sobre `navy` e `navy-deep` (Hero, Diferenciais, Contato, Rodapé). */
+  --on-dark-muted: #c3d0de; /* Texto secundário sobre `navy` e `navy-deep` (≥ 8:1). */
+  --focus: #0b2e57; /* Anel de foco: 2px de `surface` + 2px de `focus` (≥ 3:1 em qualquer fundo do sistema). */
+  --success: #1e6b45; /* Confirmação de envio do formulário; sempre acompanhada de ícone e texto. */
+  --danger: #b3261e; /* Erros de validação; sempre acompanhados de texto explicativo. */
+  --shadow-1: 0 1px 2px rgba(11,46,87,0.08); /* Cartões em repouso. */
+  --shadow-2: 0 12px 32px rgba(11,46,87,0.14); /* Cartão em hover, header fixo após rolagem, painel do formulário. */
+}
+[data-theme="dark"] {
+  --navy: #0b2e57;
+  --navy-deep: #061b35;
+  --steel: #9db1c8;
+  --surface: #071e3a;
+  --surface-alt: #0b2e57;
+  --surface-raised: #0e3766;
+  --ink: #f2f5f9;
+  --ink-muted: #b9c7d6;
+  --line: #1e4470;
+  --line-strong: #6f88a6;
+  --brand: #9db1c8;
+  --on-brand: #061b35;
+  --brand-soft: #12355f;
+  --accent: #e6ecf3;
+  --on-dark: #ffffff;
+  --on-dark-muted: #c3d0de;
+  --focus: #e6ecf3;
+  --success: #7dd3a5;
+  --danger: #f4a7a1;
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow-2: 0 12px 32px rgba(0,0,0,0.5);
+}
+:root {
+  --space-1: 4px; /* Ajustes finos: ícone ↔ texto em chips. */
+  --space-2: 8px; /* Gap interno de botões e listas. */
+  --space-3: 12px; /* Gap entre rótulo e campo; entre itens de lista. */
+  --space-4: 16px; /* Gutter mobile; padding de chips e campos. */
+  --space-6: 24px; /* Gutter de grid desktop; padding de cartões (mobile). */
+  --space-8: 32px; /* Padding de cartões (desktop); gap entre cartões. */
+  --space-12: 48px; /* Título de seção ↔ conteúdo. */
+  --space-16: 64px; /* Padding vertical de seção (mobile). */
+  --space-24: 96px; /* Padding vertical de seção (desktop). */
+  --space-32: 128px; /* Padding vertical do Hero (desktop). */
+  --radius-sm: 2px; /* Chips, tags técnicas, campos — o canto das hastes do símbolo (2,5 no desenho). */
+  --radius-md: 4px; /* Botões e cartões. O sistema é preciso: cantos quase retos. */
+  --radius-lg: 8px; /* Painéis grandes (formulário, mapa). */
+  --radius-round: 50%; /* Somente para círculos: anéis de ícone e bolhas de instrumento. */
+  --container-max: 1200px; /* Largura máxima do conteúdo. */
+  --header-height: 72px; /* Altura do header fixo (64px no mobile). */
+  --bp-tablet: 768px; /* Breakpoint tablet: grids de 3 → 2 colunas. */
+  --bp-desktop: 1024px; /* Breakpoint desktop: navegação completa, grids de 3 colunas. */
+  --font-display: "Montserrat", "Arial", sans-serif;
+  --font-sans: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+  --text-display-xl: 800 64px/68px var(--font-display); /* Título do Hero (desktop). Em mobile cai para display-lg. */
+  --text-display-lg: 800 44px/50px var(--font-display); /* Hero em tablet/mobile; títulos de impacto. */
+  --text-heading-1: 800 36px/44px var(--font-display); /* Título de seção (H2 da página). */
+  --text-heading-2: 800 22px/30px var(--font-display); /* Título de cartão e etapa. */
+  --text-eyebrow: 500 13px/16px var(--font-display); /* Rótulo acima do título de seção, sempre em caixa alta — ecoa o descritor espaçado do logo. */
+  --text-lead: 400 20px/30px var(--font-sans); /* Subtítulo do Hero e introdução de seções. */
+  --text-body: 400 16px/26px var(--font-sans); /* Texto corrido. */
+  --text-body-sm: 400 14px/22px var(--font-sans); /* Texto de cartões, listas e rodapé. */
+  --text-label: 600 14px/20px var(--font-sans); /* Botões, rótulos de campo, navegação. */
+  --text-caption: 400 12px/16px var(--font-sans); /* Legendas, avisos LGPD, copyright. */
+  --text-spec: 500 13px/20px var(--font-mono); /* Códigos de serviço, tags de instrumento, referências normativas, numeração de etapas. */
+}
+.display-xl {
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 68px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.display-lg {
+  font-family: var(--font-display);
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+.heading-1 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.heading-2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+}
+.lead {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body-sm {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.caption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.spec {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
