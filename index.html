@@ -1,59 +1,38 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b2e57">
-  <meta name="description" content="Milet Engenharia Consultiva. Engenharia de instrumentação, automação e telecomunicações para projetos industriais.">
-  <title>Milet Engenharia Consultiva</title>
-  <link rel="icon" href="simbolo.svg" type="image/svg+xml">
-  <style>
-    :root{color-scheme:light;--navy:#0b2e57;--ink:#172a40;--muted:#64758a;--line:#dce4ec;--blue:#9db1c8;--paper:#f6f8fb}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
-    a{color:inherit}
-    .wrap{width:min(1120px,calc(100% - 48px));margin:auto}
-    header{background:#fff;border-bottom:1px solid var(--line)}
-    header .wrap{min-height:104px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .logo{display:block;width:270px;max-width:65%;height:auto}
-    .status{color:var(--navy);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-    main{overflow:hidden}
-    .hero{position:relative;padding:clamp(78px,12vw,160px) 0 90px;background:linear-gradient(145deg,#fff 15%,#eef3f8 100%)}
-    .hero:after{content:"";position:absolute;right:-120px;top:-180px;width:480px;height:480px;border:90px solid rgba(157,177,200,.13);border-radius:50%;pointer-events:none}
-    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--navy);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
-    .eyebrow:before{content:"";width:34px;height:2px;background:var(--blue)}
-    h1{position:relative;max-width:840px;margin:28px 0 24px;color:var(--navy);font-size:clamp(2.7rem,6vw,5.7rem);line-height:1.08;letter-spacing:-.055em;font-weight:750}
-    .lead{max-width:680px;margin:0;color:#445b73;font-size:clamp(1.1rem,2vw,1.4rem);line-height:1.55}
-    .intro{padding:75px 0 95px}
-    .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,8vw,120px)}
-    h2{margin:0;color:var(--navy);font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;letter-spacing:-.035em}
-    .intro p{margin:20px 0 0;color:#4f6175}
-    .areas{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
-    .areas li{display:flex;gap:18px;align-items:baseline;padding:17px 0;border-bottom:1px solid var(--line);font-weight:600}
-    .areas span{font-size:.75rem;color:#718aa5;font-weight:800}
-    footer{background:var(--navy);color:#dce7f2;padding:28px 0}
-    footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem}
-    @media(max-width:680px){.wrap{width:min(100% - 36px,1120px)}header .wrap{min-height:86px}.logo{width:205px}.status{max-width:100px;text-align:right;font-size:.64rem}.hero{padding:82px 0}.hero:after{right:-280px}.intro{padding:60px 0}.intro-grid{grid-template-columns:1fr}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b2e57">
+<title>MILET Engenharia Consultiva | Projetos e consultoria</title>
+<meta name="description" content="Projetos e consultoria em instrumentação, automação, segurança funcional e telecomunicações industriais.">
+<link rel="icon" href="assets/milet/assets/Logos/milet-icone.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/milet/tokens.css"><link rel="stylesheet" href="assets/milet/site.css">
 </head>
 <body>
-  <header><div class="wrap"><img class="logo" src="logo.svg" alt="Milet Engenharia Consultiva"><span class="status">Site em preparação</span></div></header>
-  <main>
-    <section class="hero" aria-labelledby="titulo"><div class="wrap">
-      <div class="eyebrow">Engenharia consultiva</div>
-      <h1 id="titulo">Precisão técnica em cada decisão de projeto.</h1>
-      <p class="lead">Instrumentação, automação e telecomunicações para projetos industriais. Uma atuação orientada por rigor técnico, integração e clareza.</p>
-    </div></section>
-    <section class="intro" aria-labelledby="atuacao"><div class="wrap intro-grid">
-      <div><h2 id="atuacao">Conhecimento especializado para projetos complexos.</h2><p>Estamos preparando este espaço para apresentar nossa atuação, serviços e canais de contato.</p></div>
-      <ul class="areas" aria-label="Áreas de atuação">
-        <li><span>01</span> Instrumentação e controle</li>
-        <li><span>02</span> Automação industrial</li>
-        <li><span>03</span> Telecomunicações industriais</li>
-        <li><span>04</span> Segurança funcional e integração</li>
-      </ul>
-    </div></section>
-  </main>
-  <footer><div class="wrap"><span>© 2026 Milet Engenharia Consultiva</span><span>Aracaju · Sergipe · Brasil</span></div></footer>
-</body>
-</html>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="header"><div class="wrap head-inner">
+<a href="#inicio" aria-label="MILET Engenharia Consultiva, início"><img class="logo" src="assets/milet/assets/Logos/milet-horizontal.svg" alt="" width="240" height="60"></a>
+<button class="menu-button" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+<nav id="menu" class="nav" aria-label="Principal"><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#metodo">Como trabalhamos</a><a href="#contato">Contato</a></nav>
+</div></header>
+<main id="conteudo">
+<section class="hero" id="inicio"><div class="wrap hero-grid"><div>
+<p class="eyebrow">Engenharia consultiva</p><h1>Precisão técnica para decisões de projeto.</h1>
+<p class="hero-lead">Projetos e consultoria em instrumentação, automação, segurança funcional e telecomunicações para empreendimentos industriais.</p>
+<a class="button" href="#servicos">Conhecer os serviços</a>
+<div class="hero-notes"><span>Instrumentação</span><span>Automação</span><span>Telecomunicações</span></div>
+</div><div class="hero-art" aria-hidden="true"><div class="ring"><img src="assets/milet/assets/Logos/milet-simbolo.svg" alt="" width="255" height="255"></div><span class="tag one">P&amp;ID</span><span class="tag two">SIS</span><span class="tag three">IEC 61850</span></div></div></section>
+<section id="sobre" class="section"><div class="wrap about-grid"><div><p class="eyebrow">Sobre a MILET</p><h2>Engenharia que conecta o projeto à operação.</h2></div><div class="about-copy"><p>Atuamos no desenvolvimento e na revisão técnica de projetos industriais, com atenção às interfaces entre disciplinas, aos requisitos de segurança e à documentação de engenharia.</p><p>O trabalho começa pelo entendimento do problema: escopo, premissas, normas aplicáveis e decisões que precisam ser tomadas. A partir daí, estruturamos entregáveis claros para cada etapa.</p><div class="chips"><span>FEED</span><span>P&amp;ID</span><span>SIS / SIL</span><span>IEC 61850</span></div></div></div></section>
+<section id="servicos" class="section section-alt"><div class="wrap"><p class="eyebrow">Áreas de atuação</p><h2>Onde podemos contribuir.</h2><p class="section-lead">Apoio técnico da definição dos requisitos à verificação dos entregáveis.</p>
+<div class="cards">
+<article class="card"><span class="code">S-01</span><h3>Instrumentação e controle</h3><p>Especificação de instrumentos, arquitetura de controle, listas, folhas de dados e documentação de malhas.</p><ul><li>Requisitos e especificações</li><li>Projeto básico e detalhamento</li><li>Revisão de entregáveis</li></ul></article>
+<article class="card"><span class="code">S-02</span><h3>Automação industrial</h3><p>Definição e análise de sistemas de controle, redes industriais e integração entre equipamentos e plataformas.</p><ul><li>Arquitetura de sistemas</li><li>Interfaces e integração</li><li>Documentação técnica</li></ul></article>
+<article class="card"><span class="code">S-03</span><h3>Segurança funcional</h3><p>Apoio de engenharia para SIS, intertravamentos e interfaces com sistemas de segurança industrial.</p><ul><li>Requisitos de segurança</li><li>Análise de interfaces</li><li>Revisão técnica</li></ul></article>
+<article class="card"><span class="code">S-04</span><h3>Telecomunicações industriais</h3><p>Infraestrutura e sistemas de comunicação para instalações industriais, integrados à automação e à operação.</p><ul><li>Arquitetura de redes</li><li>Fibra e comunicação</li><li>Sistemas auxiliares</li></ul></article>
+</div></div></section>
+<section class="section band"><div class="wrap band-grid"><p class="eyebrow">Nossa abordagem</p><h2>Escopo definido. Interfaces claras. Decisões documentadas.</h2><p>Engenharia aplicada ao contexto real do empreendimento, da análise de alternativas à consolidação dos documentos para implantação e operação.</p></div></section>
+<section id="metodo" class="section"><div class="wrap"><p class="eyebrow">Como trabalhamos</p><h2>Um processo técnico e rastreável.</h2><ol class="steps"><li><span>01</span><h3>Entender</h3><p>Reunir dados de entrada, premissas, restrições e interfaces do projeto.</p></li><li><span>02</span><h3>Definir</h3><p>Delimitar escopo, critérios de projeto e entregáveis necessários.</p></li><li><span>03</span><h3>Desenvolver</h3><p>Produzir ou revisar documentos técnicos com consistência entre disciplinas.</p></li><li><span>04</span><h3>Consolidar</h3><p>Registrar comentários, decisões e revisões para a próxima etapa.</p></li></ol></div></section>
+<section id="contato" class="section contact"><div class="wrap contact-grid"><div><p class="eyebrow">Contato</p><h2>Vamos conversar sobre o seu projeto?</h2><p>O canal comercial está sendo configurado. Esta página será atualizada com um contato verificado antes do lançamento completo.</p></div><figure class="mascot"><img src="assets/milet/foca-ocioso.svg" alt="Engenheiro FOCA, mascote da MILET" width="220" height="242"><figcaption>Engenheiro FOCA · mascote da MILET</figcaption></figure></div></section>
+</main>
+<footer class="footer"><div class="wrap foot-inner"><img src="assets/milet/assets/Logos/milet-horizontal-negativo.svg" alt="MILET Engenharia Consultiva" width="225" height="64"><p>Projetos e consultoria para a indústria.</p><small>© 2026 MILET Engenharia Consultiva · Aracaju, Sergipe</small></div></footer>
+<script src="assets/milet/site.js" defer></script>
+</body></html>
